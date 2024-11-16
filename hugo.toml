@@ -1,0 +1,43 @@
+copyright = "© Solidor"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Europe/Paris"
+timeout = "120s"
+title = 'Solidor'
+theme = 'gallery'
+
+[params]
+  defaultTheme = "dark"
+  description = "My digital gallery"
+  title = "Solidor"
+  [params.author]
+    name = "Solidor"
+  [params.socialIcons]
+    x = "https://x.com/Solidor404"
+    youtube = "https://www.youtube.com/@solidor_/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[menu]
+  [[menu.footer]]
+    name = "Youtube"
+    url = "https://www.youtube.com/@solidor_/"
+    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
+
